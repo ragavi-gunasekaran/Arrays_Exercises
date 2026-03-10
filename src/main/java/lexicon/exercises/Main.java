@@ -1,5 +1,7 @@
 package lexicon.exercises;
 
+import java.util.Arrays;
+
 public class Main {
 
     static void main() {
@@ -17,6 +19,15 @@ public class Main {
             Expected output: `Index position of number 5 is: 2`*/
             int number[] = {1,2,3,4,5,6,7};
             indexOf(number);
+
+        /*3. Write a program which will sort a string array.
+                Expected output:
+        String array: `[Paris, London, New York, Stockholm]`
+        Sorted string array: `[London, New York, Paris, Stockholm]`*/
+        String places[] = {"Paris", "London", "New York", "Stockholm"};
+        System.out.println(Arrays.toString(places));
+        Arrays.sort(places);
+        System.out.println(Arrays.toString(places));
     }
 
     static void indexOf(int number[]){
