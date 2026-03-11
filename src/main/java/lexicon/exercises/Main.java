@@ -39,6 +39,18 @@ public class Main {
         System.out.println("Initial Elements : " + Arrays.toString(copyElement));
         System.out.println("Copied Elements : " + Arrays.toString(newElements));
 
+        /*5. Create a two-dimensional string array `[2][2]`. Assign values containing any Country and City.
+                Expected output:
+        France Paris
+        Sweden Stockholm*/
+        String city[][] ={ {"France", "Paris"}, {"Sweden", "Stockholm"}};
+        for (int i = 0; i < 2 ; i ++){
+            for (int j = 0 ; j < 2 ; j++){
+                System.out.print(city[i][j] + "  ");
+            }
+            System.out.println();
+        }
+
     }
 
     static void indexOf(int number[]){
