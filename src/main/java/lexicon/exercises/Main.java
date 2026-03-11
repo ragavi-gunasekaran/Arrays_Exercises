@@ -28,6 +28,17 @@ public class Main {
         System.out.println(Arrays.toString(places));
         Arrays.sort(places);
         System.out.println(Arrays.toString(places));
+
+        /*4. Write a program which will copy the elements of one array into another array.
+        Expected output:
+        Elements from first array: `1 15 20`
+        Elements from second array: `1 15 20`*/
+        int copyElement[] = {1,15,20};
+        int value = copyElement.length;
+        int newElements[] = Arrays.copyOf(copyElement,value);
+        System.out.println("Initial Elements : " + Arrays.toString(copyElement));
+        System.out.println("Copied Elements : " + Arrays.toString(newElements));
+
     }
 
     static void indexOf(int number[]){
