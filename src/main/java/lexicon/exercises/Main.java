@@ -51,6 +51,29 @@ public class Main {
             System.out.println();
         }
 
+        /*6. Write a program which will set up an array to hold the next values in this
+        order: `43, 5, 23, 17, 2, 14` and print the average of these 6 numbers.
+                Expected output: `Average is: 17.3`*/
+        int numbersArray[] = {43, 5, 23, 17, 2, 14};
+        double sum = 0;
+        for (int index = 0 ; index < numbersArray.length ; index ++){
+            sum = sum + numbersArray[index];
+        }
+        double average = sum / numbersArray.length;
+        System.out.println("Average of the given numbers is : " + average);
+
+        /*7. Write a program which will set up an array to hold 10 numbers and print out only the uneven numbers.
+        Example:
+        Array: `1 2 4 7 9 12`
+        Odd Array: `1 7 9`*/
+        int allNumberArray[] = {1, 2 ,4 ,7 ,9 ,12};
+        System.out.print("Odd Array is : ");
+        for (int elemnts : allNumberArray){
+            if ((elemnts % 2) != 0){
+                System.out.print(elemnts + "  ");
+            }
+        }
+
     }
 
     static void indexOf(int number[]){
